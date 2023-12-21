@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,231,1) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border: solid gray;
+    border-radius: 7px;
+    background-image: url("./Imagens/Campo.jpeg");
+    background-size: 100%;
+}
+header{
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    border: solid white;
+    border-radius: 7px;
+}
+/*Escrita - Cantagalo*/
+.cantagalo {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px white;
+    color: brown;
+    text-decoration: none;
+}
+.cantagalo1 {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px blueviolet;
+    color: brown;
+    text-decoration: none;
+}
+/* Barra navegação Mobile*/
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    visibility: hidden;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu div{
+    background: black;
+    height: 3px;
+    width: 32px;
+    margin: 8px;
+    border-radius: 3px;
+}
+/*Background */
+.campo {
+    text-align: center;
+    padding: 10px;
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+}
+/*Escritas*/
+nav, .desen-1  {
+    font-family: 'Times New Roman', Times, serif, Bold;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    text-shadow: 2px 2px 4px white;
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+
+/* Seção Cantagalo*/
+.ct h1 {
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px black;
+    color: rgb(255, 230, 0);
+}
+.ct p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.ct th{
+    padding: 15px;
+    font-size: 18px;
+}
+.ct td{
+    padding: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    text-align: center;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 35px;
+    
+}
+table{
+    background-color: white;
+    width: 100%;
+    margin-bottom : .5em;
+    table-layout: fixed;
+    text-align: center;
+}
+/*Escudo*/
+div, .pic-db {
+    text-align: center;
+    margin: 15px;
+}
+.escudo{
+    width: 50%;
+    max-width: 400px;
+    max-height: 365px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 45px;
+    border: solid black;
+}
+
+select, option {
+    padding: 5px;
+    background-color: lightskyblue;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.atleta{
+    background-color: rgb(255, 251, 0);
+    font-size: 20px;
+
+}
+
+.jogador{
+    background-color: rgb(165, 75, 75);
+    font-size: large;
+}
+
+.jogador2{
+    background-color: rgb(75, 129, 165);
+    font-size: large;
+}
+
+/*Subir Página*/
+.top-00{
+    text-align: right;
+    padding: 50px;
+}
+
+#top-01{
+    font-size: 20px;
+    text-align: right;
+    bottom: 50px;
+    right:50px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.camisas div{
+    display: inline-block;
+}
+.camisas img{
+    width: 120px;
+}
+
+.camisaBranca{
+    padding-left: 60px;
+    float: right;
+}
+
+.camisaAzul{
+    padding-right: 60px;
+    float: left;
+}
+.placar{
+    font-size: 100px;
+    color: yellow;
+    padding: 30px;
+    text-shadow: 2px 2px 4px black;
+}
+/* Celulares */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    .table:not(.table) table {
+        border: 0;
+      }
+    
+    .table:not(.table) table, section {
+    font-size: 1.3em;
+    }
+
+    .tablet:not(.table) table, thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    }
+
+    .table:not(.table) table, tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    }
+
+    .table:not(.table) table, td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+    }
+
+    .table:not(.table) table, td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    }
+
+    .table:not(.table) table, td:last-child {
+    border-bottom: 0;
+    }
+
+    .escudo{
+        width: 200%;
+        max-width: 250px;
+        max-height: 265px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        border-radius: 45px;
+        border: solid black;
+    }
+
+    .camisaBranca{
+        padding-left: 5px;
+        float: right;
+    }
+    
+    .camisaAzul{
+        padding-right: 5px;
+        float: left;
+    }
+    .placar{
+        font-size: 30px;
+        color: yellow;
+        padding: 5px;
+        text-shadow: 2px 2px 4px black;
+    }
+    .camisas img{
+        width: 38px;
+    }
+    
+
+    /*Barra de navegação*/
+    .nav-list{
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,207,253,1) 50%, rgba(252,176,69,1) 100%);
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        width: 50vw;
+        height: 45vh;
+        flex-direction: column;
+        align-items:center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        border-radius: 10px;
+        border: solid black;
+        margin-left: 5%;
+    }
+
+    a{
+        visibility: hidden;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px)  {
+    body {
+        background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    .table:not(.table) table {
+        border: 0;
+      }
+    
+    .table:not(.table) table, section {
+    font-size: 1.3em;
+    }
+
+    .tablet:not(.table) table, thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    }
+
+    .table:not(.table) table, tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    }
+
+    .table:not(.table) table, td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+    }
+
+    .table:not(.table) table, td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    }
+
+    .table:not(.table) table, td:last-child {
+    border-bottom: 0;
+    }
+
+    .escudo{
+        width: 100%;
+        max-width: 300px;
+        max-height: 265px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        border-radius: 45px;
+        border: solid black;
+        
+    }
+    
+    .camisaBranca{
+        padding-left: 35px;
+        float: right;
+    }
+    
+    .camisaAzul{
+        padding-right: 35px;
+        float: left;
+    }
+    .placar{
+        font-size: 35px;
+        color: yellow;
+        padding: 20px;
+        text-shadow: 2px 2px 4px black;
+    }
+    .camisas img{
+        width: 35px;
+    }
+
+    /*Barra de navegação*/
+    .nav-list{
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,207,253,1) 50%, rgba(252,176,69,1) 100%);
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        width: 50vw;
+        height: 45vh;
+        flex-direction: column;
+        align-items:center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        border-radius: 10px;
+        border: solid black;
+        margin-left: 5%;
+    }
+
+    a{
+        visibility: hidden;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: #74EBD5;
+        background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    .table:not(.table) table {
+        border: 0;
+      }
+    
+    .table:not(.table) table, section {
+    font-size: 1.3em;
+    }
+
+    .tablet:not(.table) table, thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    }
+
+    .table:not(.table) table, tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    }
+
+    .table:not(.table) table, td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+    }
+
+    .table:not(.table) table, td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    }
+
+    .table:not(.table) table, td:last-child {
+    border-bottom: 0;
+    }
+
+    .escudo{
+        width: 250%;
+        max-width: 300px;
+        max-height: 265px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        border-radius: 45px;
+        border: solid black;
+    }
+    
+    .camisaBranca{
+        padding-left: 50px;
+        float: right;
+    }
+    
+    .camisaAzul{
+        padding-right: 50px;
+        float: left;
+    }
+    .placar{
+        font-size: 55px;
+        color: yellow;
+        padding: 20px;
+        text-shadow: 2px 2px 4px black;
+    }
+    .camisas img{
+        width: 55px;
+    }
+
+    /*Barra de navegação*/
+    .nav-list{
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,207,253,1) 50%, rgba(252,176,69,1) 100%);
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        width: 50vw;
+        height: 45vh;
+        flex-direction: column;
+        align-items:center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        border-radius: 10px;
+        border: solid black;
+        margin-left: 5%;
+    }
+
+    a{
+        visibility: hidden;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
